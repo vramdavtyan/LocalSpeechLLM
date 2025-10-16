@@ -1,6 +1,6 @@
 ### Local Voice Chatbot with Ollama, Whisper, and Kokoro
 
-A lightweight, privacy-friendly voice assistant built using **Streamlit**, **Faster Whisper**, **Ollama**, and **Kokoro TTS** — all running **locally** with no cloud dependencies. Speak, transcribe, chat, and hear responses — all in one browser-based UI.
+A lightweight, voice assistant built using **Streamlit**, **Faster Whisper**, **Ollama**, and **Kokoro TTS** — all running **locally** with no cloud dependencies. Speak, transcribe, chat, and hear responses — all in one browser-based UI.
 
 ---
 
@@ -21,27 +21,29 @@ A lightweight, privacy-friendly voice assistant built using **Streamlit**, **Fas
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/voice-chatbot-ollama.git
-cd voice-chatbot-ollama
+git https://github.com/vramdavtyan/LocalSpeechLLM.git
+cd LocalSpeechLLM
 ```
 
 ### 2. Create and Activate a Virtual Environment
 
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-### 3. Install Python Dependencies
+### Linux
 
 ```bash
-pip install -U ollama
-pip install -q kokoro>=0.9.4 soundfile
-pip install faster-whisper
-pip install streamlit
+source venv/bin/activate
 ```
 
-### 4. Install and Run Ollama
+### Windows
+
+```bash
+venv\Scripts\activate.bat
+```
+
+### 3. Install and Run Ollama
 
 Install Ollama (if not already):
 
@@ -54,6 +56,15 @@ ollama run llama3.2:3b
 ```
 
 > You can change the model in code to any installed one (e.g. `llama3`, `mistral`, etc.)
+
+### 4. Install Python Dependencies
+
+```bash
+pip install -U ollama
+pip install -q kokoro>=0.9.4 soundfile
+pip install faster-whisper
+pip install streamlit
+```
 
 ### 5. Run the script
 
@@ -94,5 +105,3 @@ streamlit run app.py
 ## 📸 Screenshot
 
 ![App Screenshot](Screenshot.png)
-
----`
