@@ -8,7 +8,7 @@ A lightweight, voice assistant built using **Streamlit**, **Faster Whisper**, **
 
 - 🎙️ **Voice Input**: Record voice using browser microphone
 - 🧠 **Speech-to-Text**: Local transcription with [Faster Whisper](https://github.com/SYSTRAN/faster-whisper)
-- 💬 **LLM Chat**: Local inference using [Ollama](https://ollama.com/download)
+- 💬 **LLM Chat**: Local inference using [Ollama-Python](https://github.com/ollama/ollama-python)
 - 🔊 **Voice Responses**: Assistant speaks via [Kokoro](https://github.com/hexgrad/kokoro)
 - 🖼️ **Streamlit UI**: Chat history, audio playback, and user-friendly controls with [Streamlit](https://github.com/streamlit/streamlit)
 
